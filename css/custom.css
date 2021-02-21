@@ -1,0 +1,155 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    min-width: 300px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: lightgray;
+}
+
+/* Navbar Styles */
+.navbar{border-radius:0;}
+.navbar-toggler{border:1px solid rgb(240,240,240);}
+.navbar-toggler:hover{background:rgb(240,240,240)}
+.navbar-toggler:focus{outline:0;}
+
+/* Navbar Collapse Styles To Stack Items At Mobile Widths*/
+@media(max-width:47.9em) {
+    .navbar .navbar-brand {float:none;display: inline-block;}
+    .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+    .navbar .navbar-nav {float:none !important;}
+    .nav-item{width:100%;text-align:left;}
+}
+
+#hero {
+    height: 100%;
+    background: url("../img/Desert.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#hero h1{
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#hero a{
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 5px;
+    color: #4A4A4A;
+    border: 1px solid white;
+    transition: 1s;
+}
+
+#hero a:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.margin{
+    margin: 30px 20px;
+}
+
+
+@media only screen and (max-width:700px) {
+    #hero h1{
+        font-size: 3em;
+    }
+    #hero a{
+        padding: 15px 30px;
+        border-radius: 3px;
+    }
+    .margin{
+        margin: 10px 0;
+    }
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    height: 50px;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.full-width-wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.cards{
+    text-align: left;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.bg-transparent{
+    background-color: transparent ;
+}
+
+.bg-transparent li{
+    background-color: transparent ;
+}
+
+.black-border{
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+}
+
+footer {
+    margin-top: 20px;
+    min-height: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+footer>a {
+    color: white;
+    background-color: darkblue;
+    text-decoration: none;
+}
+
+footer>a:visited {
+    background-color: lightgrey;
+}
+
+
+
+
